@@ -46,7 +46,99 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="catalog">
+      <header class="catalog-header">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-item">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <section class="properties">
+        <h2 class="visually-hidden">Фильтр каталога гостиниц</h2>
+        <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="infrastructure-filter-group">
+            <legend class="infrastructure-filter-title">Инфраструктура:</legend>
+            <ul class="infrastructure-filter-list">
+              <li class="infrastructure-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wi-Fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="housing-filter-group">
+            <legend class="housing-filter-title">Тип жилья:</legend>
+            <ul class="housing-filter-list">
+              <li class="housing-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="housing-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="housing-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-type" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="value-filter-group">
+            <legend class="value-filter-title">Стоимость, ₽:</legend>
+              <label class="visually-hidden" for="value-from">Стоимость, от</label>
+              <input type="number" name="value-from" id="value-from" min="0" placeholder="0" value="0">
+              <label class="visually-hidden" for="value-to">Стоимость, до</label>
+              <input type="number" name="value-to" id="value-to" max="9000" placeholder="9000" value="9000">
+              <label class="visually-hidden" for="value-range">Скрол диапазона стоимости</label>
+              <input class="value-filter-range" type="range" min="0" max="9000" value="7000" id="value-range">
+          </fieldset>
+          <button class="filter-apply-button" type="submit">Применить</button>
+          <button class="filter-reset-button" type="reset">Сбросить</button>
+        </form>
+      </section>
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+      </header>
+
+
 
 
 
@@ -98,7 +190,7 @@
           </li>
         </ul>
         <a class="number-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-logo-html" href="#">
+        <a class="footer-logo-html" href="https://htmlacademy.ru">
           <img class="logo-footer" src="img/HTML Academy.png" alt="Логотип HTML academy">
         </a>
       </section>
