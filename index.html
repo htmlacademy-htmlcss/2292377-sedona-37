@@ -120,9 +120,10 @@
         <p class="dates">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-motel" href="#">Поиск гостиницы в Седоне</a>
       </section>
+    </main>
       <footer class="footer-index">
         <section class="form"></section>
-        <h2 class="mailing-list">Подпишитесь на рассылку</h2>
+        <h3 class="mailing-list">Подпишитесь на рассылку</h3>
         <p class="mailing-lists">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <lable>
@@ -149,6 +150,18 @@
           </a>
         </section>
       </footer>
-    </main>
+      <div class="modal">
+        <div class="modal-container">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-item search-item-date">
+              <label for="start-date">Дата заезда:</label>
+              <input id="start-date" type="text" name="date" placeholder="27 апреля 2020">
+              <button class="calendar">
+          <button class="modal-button"></button>
+          <form action="" class="modal-form"></form>
+        </div>
+      </div>
+
   </body>
 </html>
