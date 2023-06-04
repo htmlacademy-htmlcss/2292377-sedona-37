@@ -1,0 +1,21 @@
+body {
+
+
+background-color: #E5E5E5;
+}
+
+.index-logo {
+padding-left: 70px;
+
+}
+.main-navigation {
+  display: flex;
+}
+.navigation-list{
+  display: flex;
+  gap: 32px;
+}
+.navigation-user{
+  display: flex;
+
+}
