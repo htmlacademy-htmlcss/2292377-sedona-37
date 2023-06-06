@@ -1,21 +1,82 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+
 body {
+  min-width: 1280px;
+  height: 100%;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
 
-
-background-color: #E5E5E5;
+.index-header {
+width: 1200px;
 }
 
 .index-logo {
-padding-left: 70px;
-
+  padding-left: 70px;
 }
+
 .main-navigation {
   display: flex;
+
 }
-.navigation-list{
-  display: flex;
-  gap: 32px;
+
+.navigation-list {
+display: flex;
+list-style-type: none;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+width: 339px;
+height: 64px;
+gap: 32px;
+padding-left: 28px;
 }
-.navigation-user{
+
+.navigation-user {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+  padding-right: 70px;
+}
+
+.main-info {
+height: 485px;
+width: 1200px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background-image: url(/img/index-background.jpg) ;
+}
+
+.welcome {
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
 
 }
