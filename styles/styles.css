@@ -14,69 +14,121 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-
 body {
-  min-width: 1280px;
-  height: 100%;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #F2F2F2;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
+  background-color: #f2f2f2;
+}
+
+.main-navigation{
+  display: flex;
+
+}
+
+.page-container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .index-header {
-width: 1200px;
+  display: flex;
+  width: 1200px;
+  position: relative;
+  padding-left: 239px;
+  box-sizing: border-box;
 }
 
 .index-logo {
-  padding-left: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.main-navigation {
-  display: flex;
-
-}
 
 .navigation-list {
-display: flex;
-list-style-type: none;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-width: 339px;
-height: 64px;
-gap: 32px;
-padding-left: 28px;
-}
-
-.navigation-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  list-style-type: none;
-  padding-right: 70px;
+  gap: 32px;
+
 }
 
-.main-info {
-height: 485px;
-width: 1200px;
-left: 0px;
-top: 0px;
-border-radius: 0px;
-background-image: url(/img/index-background.jpg) ;
+.navigation-user{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.welcome {
-  padding-left: 371px;
-  padding-right: 371px;
-  padding-top: 51px;
-  padding-bottom: 82px;
+.hello{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.main-info{
+  min-height: 485px;
+  background-color: #422110;
+  background-image: url("../img/cut-background-index.svg"),  url("../img/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center top;
+  background-size: 1200px 57px, cover;
+  padding-top: 52px;
+  padding-bottom: 81px;
+  box-sizing: border-box;
+}
+
+.index-img{
+  display: block;
+  margin: 0 auto;
+}
+
+.index-info{
+  text-align: center;
+}
+
+.main-cause-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-cause{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+
+}
+
+
+.conacts{
+  display: flex;
+
+}
+
+.contacts-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
