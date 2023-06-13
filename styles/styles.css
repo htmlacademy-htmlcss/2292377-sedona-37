@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.main-navigation{
+  display: flex;
+
+}
+
+.page-container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.index-header {
+  display: flex;
+  width: 1200px;
+  position: relative;
+  padding-left: 239px;
+  box-sizing: border-box;
+}
+
+.index-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+
+}
+
+.navigation-user{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.hello{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-info{
+  min-height: 485px;
+  background-color: #422110;
+  background-image: url("../img/cut-background-index.svg"),  url("../img/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, center top;
+  background-size: 1200px 57px, cover;
+  padding-top: 52px;
+  padding-bottom: 81px;
+  box-sizing: border-box;
+}
+
+.index-img{
+  display: block;
+  margin: 0 auto;
+}
+
+.index-info{
+  text-align: center;
+}
+
+.main-cause-list{
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-auto-flow: dense;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
+.conacts{
+  display: flex;
+
+}
+
+.contacts-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.form {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #756257;
+  background-image: url(../img/background-newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
