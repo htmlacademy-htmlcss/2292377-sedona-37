@@ -107,17 +107,16 @@ body {
 }
 
 .main-cause-list{
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-auto-flow: dense;
+  text-align: center;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
-.main-cause{
-  width: 1200px;
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
 
-}
 
 
 .conacts{
@@ -131,4 +130,18 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+
+
+
+.form {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #756257;
+  background-image: url(../img/background-newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
 }
